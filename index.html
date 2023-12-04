@@ -64,9 +64,9 @@
     <main>
         <section class="sectionBanner">
             <div class="bannerContent">
-                <p class="bannerTitle">Tênis Casual <br> <span class="spanTitle">Masculino</span></p>
-                <p class="bannerPrice">A partir de<br><span class="spanPrice">R$ 79,99</span></p>
-                <button class="bannerButton">APROVEITE</button>
+                <p class="bannerTitle">Tênis Casual <br> <b class="bTitle">Masculino</b></p>
+                <p class="bannerPrice">A partir de<br><b class="bPrice">R$ 79,99</b></p>
+                <button id="bannerButton" class="buttonOrange">APROVEITE</button>
             </div>
         </section>
 
@@ -75,25 +75,25 @@
                 <div>
                     <a href="#" class="sectionInfoLinks">
                         <img src="./assets/main/card.png" alt="Ícone de cartão de crédito">
-                        <p>Pague em até 10x <br><span>sem juros*</span></p>
+                        <p>Pague em até 10x <br><b>sem juros*</b></p>
                     </a>
                 </div>
                 <div>
                     <a href="#" class="sectionInfoLinks">
                         <img src="./assets/main/free_retire.png" alt="Ícone de um alfinete GPS">
-                        <p><span>Retire grátis<br></span>em nossas lojas</p>
+                        <p><b>Retire grátis<br></b>em nossas lojas</p>
                     </a>
                 </div>
                 <div>
                     <a href="#" class="sectionInfoLinks">
                         <img src="./assets/main/discount.png" alt="Ícone de desconto ">
-                        <span>Ganhe 20% de <br> desconto*</span>
+                        <b>Ganhe 20% de <br> desconto*</b>
                     </a>
                 </div>
                 <div>
                     <a href="#" class="sectionInfoLinks">
                         <img src="./assets/main/box.png" alt="Ícone de uma caixa">
-                        <p><span>Frete grátis</span> <br>para região sul e sudeste*</p>
+                        <p><b>Frete grátis</b> <br>para região sul e sudeste*</p>
                     </a>
                 </div>
                 <div>
@@ -105,25 +105,27 @@
             </div>
         </section>
 
-        <section class="sectionShoesFem">
-            <div class="shoesFemImg">
-                <img src="./assets/main/shoes_fem.png" alt="Imagem da seção feminina">
+        <section class="sectionShoes">
+            <div class="shoesImg" id="imgFem">
+                <p class="text" id="textFem">Calcados <br> Femininos</p>
             </div>
-            <div class="ShoesFemContent">
-                <p>Escolher o seu sapato favorito entre nossa variedade de modelos e cores não será uma tarefa fácil,
-                    mas o que uma mulher não consegue fazer?</p>
-                <button>conferir</button>
+            <div class="shoesContent" id="contentFem">
+                <p >Escolher o seu sapato favorito entre nossa
+                    <b>variedade de modelos e cores</b> não será uma tarefa
+                    fácil, mas o que uma mulher não consegue fazer?
+                </p>
+                <button class="buttonOrange">conferir</button>
             </div>
         </section>
 
-        <section class="sectionShoesMas">
-            <div class="shoesMasImg">
-                <img src="./assets/main/shoes_mas.png" alt="Imagem da seção feminina">
+        <section class="sectionShoes">
+            <div class="shoesContent" id="contentMas">
+                <p>Tenha em seu guarda roupa sapatos de qualidade e confortáveis, para o dia a dia, trabalho e até mesmo
+                    para praticar esportes!</p>
+                <button class="buttonOrange">conferir</button>
             </div>
-            <div class="shoesMasContent">
-                <p>Escolher o seu sapato favorito entre nossa variedade de modelos e cores não será uma tarefa fácil,
-                    mas o que uma mulher não consegue fazer?</p>
-                <button>conferir</button>
+            <div class="shoesImg" id="imgMas">
+                <p class="text" id="textMas">Calçados <br> masculinos</p>
             </div>
         </section>
 
@@ -139,7 +141,7 @@
     </main>
     <footer>
         <p>uma empresa do grupo</p>
-        <img src="_logo2.png" alt="Logo paqueta">
+        <img src="./assets/footer/paqueta_logo_2.png" alt="Logo paqueta">
     </footer>
 </body>
 

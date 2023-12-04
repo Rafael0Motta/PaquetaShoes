@@ -226,14 +226,14 @@ header {
 #imgFem {
     background-image:
         linear-gradient(to right, #F57002 3.3%, rgba(245, 112, 2, 0) 70.06%),
-        url('./assets/main/teste.png');
+        url('./assets/main/shoesFem.png');
 }
 
 #imgMas {
 
     background-image:
         linear-gradient(to left, #F57002 3.3%, rgba(245, 112, 2, 0) 70.06%),
-        url('./assets/main/testeMas.png');
+        url('./assets/main/shoesMas.png');
 }
 
 .shoesContent {

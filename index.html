@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paqueta Shoes - HOME</title>
-    <link rel="stylesheet" href="homeStyles.css">
+    <link rel="stylesheet" href="./assets/styles/homeStyles.css">
     <link rel="icon" href="assets/nav/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- swiper carrosel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
-
     <header>
         <div class="headerContainer">
-            <p>Loja de Calçados e Moda Online </p>
+            <p>Loja de Calçados e Moda Online</p>
             <div class="linksContainer">
                 <a href="#" class="linksHeader">
                     <img class="iconHeaderConosco" src="./assets/nav/contact.png" alt="Ícone de um fone de ouvido">
@@ -30,32 +33,42 @@
         </div>
         <nav>
             <div class="navContainer">
-                <img class="logoNav" src="./assets/nav/paqueta_logo.png" alt="Logo da Paqueta Shoes"
-                    class="logo_paqueta">
+                <a href="index.html"><img class="logoNav" src="./assets/nav/paqueta_logo.png"
+                        alt="Logo da Paqueta Shoes" class="logo_paqueta"></a>
                 <div class="divNavIcons">
                     <a href="#" class="navIcons">
                         <img class="iconsNav" src="./assets/nav/wishList.png" alt="Ícone de uma lista de desejos">
-                        Lista de Desejos
+                        <span class="textAncor"> Lista de Desejos</span>
                     </a>
                     <a href="#" class="navIcons">
                         <img class="iconsNav" src="./assets/nav/bag.png" alt="Ícone de uma sacola de produtos">
-                        Sacola
-                    </a>
+                        <span class="textAncor"> Sacola</span> </a>
                     <a href="#" class="navIcons">
                         <img class="seccondLogosNav" src="./assets/nav/logIn.png" alt="Ícone de um usuário">
-                        Entrar
-                    </a>
+                        <span class="textAncor">Entrar</span> </a>
                 </div>
             </div>
 
             <div class="navLinksContainer">
-                <ul>
-                    <li><a href="#" class="navLinksCategory">Novidades</a></li>
-                    <li><a href="#" class="navLinksCategory">Feminino</a></li>
-                    <li><a href="#" class="navLinksCategory">Masculino</a></li>
-                    <li><a href="#" class="navLinksCategory">Paquetá Esportes</a></li>
-                    <li><a href="#" class="navLinksCategory">Outlet</a></li>
-                    <li><a href="#" class="navLinksCategory">Cashback</a></li>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="navLinksCategory">Novidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="navLinksCategory">Feminino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="navLinksCategory">Masculino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="navLinksCategory">Paquetá Esportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="navLinksCategory">Outlet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="navLinksCategory">Cashback</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -63,11 +76,6 @@
 
     <main>
         <section class="sectionBanner">
-            <div class="bannerContent">
-                <p class="bannerTitle">Tênis Casual <br> <b class="bTitle">Masculino</b></p>
-                <p class="bannerPrice">A partir de<br><b class="bPrice">R$ 79,99</b></p>
-                <button id="bannerButton" class="buttonOrange">APROVEITE</button>
-            </div>
         </section>
 
         <section class="sectionInfo">
@@ -110,7 +118,7 @@
                 <p class="text" id="textFem">Calcados <br> Femininos</p>
             </div>
             <div class="shoesContent" id="contentFem">
-                <p >Escolher o seu sapato favorito entre nossa
+                <p>Escolher o seu sapato favorito entre nossa
                     <b>variedade de modelos e cores</b> não será uma tarefa
                     fácil, mas o que uma mulher não consegue fazer?
                 </p>
@@ -129,6 +137,17 @@
             </div>
         </section>
 
+        <section class="sectionDestaque">
+            <div class="texts">
+                <p id="destaques">Destaques</p>
+                <a href="#" id="conferirTudo">Conferir tudo</a>
+            </div>
+            <div class="swiper">
+                <div id="shoesDestaque" class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
         <section class="sectionBrands">
             <p>As melhores marcas estão aqui</p>
             <div class="brandsLogos">
@@ -143,6 +162,8 @@
         <p>uma empresa do grupo</p>
         <img src="./assets/footer/paqueta_logo_2.png" alt="Logo paqueta">
     </footer>
+
 </body>
+<script src="./assets/script/carrousel.js"></script>
 
 </html>
